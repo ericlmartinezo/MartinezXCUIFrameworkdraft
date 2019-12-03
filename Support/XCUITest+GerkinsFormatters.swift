@@ -3,6 +3,8 @@
 import Foundation
 import XCTest
 
+// Gerkins formatters helps your test to be more explicit. Each scenario title is written  in
+// a human readable syntax. Very helpful when generating HTML test reports
 public func given(_ description: String, _ closure: () -> Void) {
     runActivity("Given: \(description)", closure)
 }

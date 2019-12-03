@@ -11,7 +11,16 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 
 	    when("I validate Sign in screen Ui elements") {
 	        application.tapIntroScreenStaticTexts(.username)
+	    }
+
+	    then("I press Sign In button") {
+	    	XCTAssertTrue(application.button["Sign In"].exists)
 	        application.tapIntroScreenButton(.signIn)
+	    }
+
+	    and("I should see") {
+	    	// whatever screen in comes next : )
+	    	// If there's a loading spinner you can use self.waitForElementToAppear 
 	    }
     }
 }
