@@ -35,3 +35,17 @@ extension XCUIApplication {
     }
 
 }
+
+    func assertTrueStaticText(elementos: String) {
+        XCTAssertTrue(application.staticTexts[elementos].exists)
+     }
+
+    func testElementExists() {
+        sleep(4)
+        assertTrueStaticText(elementos: "Hello SwiftUI")
+        assertTrueStaticText(elementos: "Second line")
+        assertTrueStaticText(elementos: "Third line")
+    }
+
+
+

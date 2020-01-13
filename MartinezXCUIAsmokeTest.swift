@@ -15,6 +15,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 
 	    then("I press Sign In button") {
 	    	XCTAssertTrue(application.button["Sign In"].exists)
+	    	assertTrueTableStaticText(element: "Sign In")
 	        application.tapIntroScreenButton(.signIn)
 	    }
 
