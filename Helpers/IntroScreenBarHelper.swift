@@ -15,6 +15,10 @@ enum IntroScreenBarHelper: String {
     func introScreenButton(in application: XCUIApplication) -> XCUIElement? {
         return application.buttons[self.rawValue]
     }
+
+    func introTextField(in application: XCUIApplication) -> XCUIElement? {
+    return application.textField[self.rawValue]
+    }
 }
 
 extension XCUIApplication {
@@ -34,18 +38,15 @@ extension XCUIApplication {
         element.tap()
     }
 
-}
-
-    func assertTrueStaticText(elementos: String) {
-        XCTAssertTrue(application.staticTexts[elementos].exists)
-     }
-
-    func testElementExists() {
-        sleep(4)
-        assertTrueStaticText(elementos: "Hello SwiftUI")
-        assertTrueStaticText(elementos: "Second line")
-        assertTrueStaticText(elementos: "Third line")
+    func tapIntroScreenTextField(_ introTextField: IntroScreenBarHelper) {
+        guard let element = introTextField.introTextField(in: self) else {
+            XCTFail("failed to tap text field in Sign In screen")
+            return
+        }
+        element.tap()
     }
+
+}
 
 
 

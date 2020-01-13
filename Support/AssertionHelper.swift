@@ -12,3 +12,12 @@
     func assertTrueTablesStaticText(object: String) {
 	   XCTAssertTrue(application.tables.staticTexts[elementos].exists)
      }
+
+
+
+     // Use case
+    // func testElementExists() {
+	   //  assertTrueStaticText(elementos: "Hello SwiftUI")
+	   //  assertTrueStaticText(elementos: "Second line")
+	   //  assertTrueStaticText(elementos: "Third line")
+    // }
