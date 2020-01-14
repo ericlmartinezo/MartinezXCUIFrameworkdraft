@@ -31,6 +31,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
         and("I should see") {
             // Assert true the Screen that appears next : )
             // If there's a loading spinner you can use self.waitForElementToAppear
+//            checking
         }
     }
 }
