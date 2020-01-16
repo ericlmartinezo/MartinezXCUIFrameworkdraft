@@ -1,4 +1,10 @@
-
+//
+//  SignInScreenPageHelper.swift
+//  SampleXCUITests
+//
+//  Created by Eric Martinez on 1/13/20.
+//  Copyright © 2020 emobile. All rights reserved.
+//
 
 import Foundation
 import XCTest
@@ -6,8 +12,9 @@ import XCTest
 enum IntroScreenBarHelper: String {
     case username = "Username"
     case signIn = "Sign In"
-
+    case incrementTotal = "Increment Total"
     
+
     func introScreenStaticTexts(in application: XCUIApplication) -> XCUIElement? {
         return application.staticTexts[self.rawValue]
     }
@@ -17,7 +24,7 @@ enum IntroScreenBarHelper: String {
     }
 
     func introTextField(in application: XCUIApplication) -> XCUIElement? {
-    return application.textField[self.rawValue]
+    return application.textFields[self.rawValue]
     }
 }
 
@@ -45,8 +52,14 @@ extension XCUIApplication {
         }
         element.tap()
     }
-
 }
 
-
-
+// Step definitions
+func incrementNumberTest() {
+    assertTrueStaticTexts(text: "0")
+    application.tapIntroScreenButton(.incrementTotal)
+    application.tapIntroScreenButton(.signIn)
+    application.tapIntroScreenButton(.incrementTotal)
+    assertTrueStaticTexts(text: "3")
+    sleep(3)
+}
