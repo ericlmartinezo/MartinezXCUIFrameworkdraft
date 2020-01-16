@@ -35,11 +35,11 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
     }
     
     func testIncrementTotal() {
-//        assertTrueStaticTexts(object: "0")
-        application.buttons["Increment Total"].tap()
-        application.buttons["Increment Total"].tap()
-        application.buttons["Increment Total"].tap()
-        XCTAssertTrue(application.staticTexts["3"].exists)
+        assertTrueStaticTexts(text: "0")
+        application.tapIntroScreenButton(.incrementTotal)
+        application.tapIntroScreenButton(.signIn)
+        application.tapIntroScreenButton(.incrementTotal)
+        assertTrueStaticTexts(text: "3")
         sleep(3)
     }
 }
