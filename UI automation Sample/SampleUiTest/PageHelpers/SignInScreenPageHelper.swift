@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 
 enum IntroScreenBarHelper: String {
-    case username = "Username"
+    case helloWorld = "Hello World"
     case signIn = "Sign In"
     case incrementTotal = "Increment Total"
     
@@ -55,11 +55,15 @@ extension XCUIApplication {
 }
 
 // Step definitions
-func incrementNumberTest() {
+func incrementScreenElementValidation() {
     assertTrueStaticTexts(text: "0")
+    assertTrueButtons(name: IntroScreenBarHelper.signIn.rawValue)
+    assertTrueButtons(name: IntroScreenBarHelper.incrementTotal.rawValue)
+}
+
+func incrementNumberTest() {
     application.tapIntroScreenButton(.incrementTotal)
     application.tapIntroScreenButton(.signIn)
     application.tapIntroScreenButton(.incrementTotal)
-    assertTrueStaticTexts(text: "3")
-    sleep(3)
+    waiting(for: application.staticTexts["3"])
 }
