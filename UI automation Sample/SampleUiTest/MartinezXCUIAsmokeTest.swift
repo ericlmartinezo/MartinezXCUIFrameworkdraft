@@ -35,7 +35,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 //    IN PROGRESS
     func testIncrementTotal() {
         
-        given("I launch the App I increment the number to three") {
+        given("I launch the App to increment the number from zero to three") {
             incrementNumberTest()
         }
     }
