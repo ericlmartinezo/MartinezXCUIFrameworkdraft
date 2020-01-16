@@ -23,15 +23,23 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
         }
 
         then("I press Sign In button") {
-            XCTAssertTrue(application.button["Sign In"].exists)
-            assertTrueTableStaticText(elementos: "Sign In")
+            XCTAssertTrue(application.buttons["Sign In"].exists)
+//            assertTrueStaticTexts(object: "Sign In")
             application.tapIntroScreenButton(.signIn)
         }
 
         and("I should see") {
             // Assert true the Screen that appears next : )
             // If there's a loading spinner you can use self.waitForElementToAppear
-//            checking
         }
+    }
+    
+    func testIncrementTotal() {
+//        assertTrueStaticTexts(object: "0")
+        application.buttons["Increment Total"].tap()
+        application.buttons["Increment Total"].tap()
+        application.buttons["Increment Total"].tap()
+        XCTAssertTrue(application.staticTexts["3"].exists)
+        sleep(3)
     }
 }

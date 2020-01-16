@@ -9,20 +9,19 @@
 import Foundation
 import XCTest
 
+var application: XCUIApplication!
+
 func assertTrueStaticTexts(object: String) {
-    XCTAssertTrue(application.staticTexts[elementos].exists)
- }
+        XCTAssertTrue(application.staticTexts[object].exists)
+     }
 
+    func assertTrueButtons(object: String) {
+       XCTAssertTrue(application.buttons[object].exists)
+     }
 
-func assertTrueButtons(object: String) {
-   XCTAssertTrue(application.buttons[elementos].exists)
- }
-
-func assertTrueTablesStaticText(object: String) {
-   XCTAssertTrue(application.tables.staticTexts[elementos].exists)
- }
-
-
+    func assertTrueTablesStaticText(object: String) {
+       XCTAssertTrue(application.tables.staticTexts[object].exists)
+     }
 
  // Use case
 // func testElementExists() {

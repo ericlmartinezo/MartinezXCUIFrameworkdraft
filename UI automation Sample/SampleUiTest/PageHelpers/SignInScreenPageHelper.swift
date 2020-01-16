@@ -23,7 +23,7 @@ enum IntroScreenBarHelper: String {
     }
 
     func introTextField(in application: XCUIApplication) -> XCUIElement? {
-    return application.textField[self.rawValue]
+    return application.textFields[self.rawValue]
     }
 }
 

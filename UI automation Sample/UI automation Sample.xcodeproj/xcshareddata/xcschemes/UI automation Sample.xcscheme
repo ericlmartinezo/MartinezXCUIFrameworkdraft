@@ -20,6 +20,20 @@
                ReferencedContainer = "container:UI automation Sample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92F72F1823CC312200425A8B"
+               BuildableName = "SampleXCUITests.xctest"
+               BlueprintName = "SampleXCUITests"
+               ReferencedContainer = "container:UI automation Sample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -35,6 +49,16 @@
                BlueprintIdentifier = "92F72F1823CC312200425A8B"
                BuildableName = "SampleXCUITests.xctest"
                BlueprintName = "SampleXCUITests"
+               ReferencedContainer = "container:UI automation Sample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92B2684F23CFD68D00D09684"
+               BuildableName = "SampleUiTest.xctest"
+               BlueprintName = "SampleUiTest"
                ReferencedContainer = "container:UI automation Sample.xcodeproj">
             </BuildableReference>
          </TestableReference>

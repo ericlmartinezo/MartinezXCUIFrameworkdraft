@@ -4,10 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SampleXCUITest.xcscheme_^#shared#^_</key>
+		<key>SampleUiTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>UI automation Sample.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>92B2684F23CFD68D00D09684</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>92F72EFA23CC30CB00425A8B</key>
 		<dict>
 			<key>primary</key>
