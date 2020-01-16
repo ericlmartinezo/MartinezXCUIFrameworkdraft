@@ -52,5 +52,14 @@ extension XCUIApplication {
         }
         element.tap()
     }
+}
 
+// Step definitions
+func incrementNumberTest() {
+    assertTrueStaticTexts(text: "0")
+    application.tapIntroScreenButton(.incrementTotal)
+    application.tapIntroScreenButton(.signIn)
+    application.tapIntroScreenButton(.incrementTotal)
+    assertTrueStaticTexts(text: "3")
+    sleep(3)
 }

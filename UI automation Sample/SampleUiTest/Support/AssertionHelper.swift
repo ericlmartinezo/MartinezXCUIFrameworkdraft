@@ -22,4 +22,3 @@ var application = XCUIApplication()
     func assertTrueTablesStaticText(object: String) {
        XCTAssertTrue(application.tables.staticTexts[object].exists)
      }
-

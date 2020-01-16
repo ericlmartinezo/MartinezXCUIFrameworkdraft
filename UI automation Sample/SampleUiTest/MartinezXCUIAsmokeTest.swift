@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 
 class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
-    
+//    SUDO CODE FOR DEMO
     func testSignInScreen() {
 
         given("I launch the App") {
@@ -24,7 +24,6 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 
         then("I press Sign In button") {
             XCTAssertTrue(application.buttons["Sign In"].exists)
-//            assertTrueStaticTexts(object: "Sign In")
             application.tapIntroScreenButton(.signIn)
         }
 
@@ -33,13 +32,11 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
             // If there's a loading spinner you can use self.waitForElementToAppear
         }
     }
-    
+//    IN PROGRESS
     func testIncrementTotal() {
-        assertTrueStaticTexts(text: "0")
-        application.tapIntroScreenButton(.incrementTotal)
-        application.tapIntroScreenButton(.signIn)
-        application.tapIntroScreenButton(.incrementTotal)
-        assertTrueStaticTexts(text: "3")
-        sleep(3)
+        
+        given("I launch the App I increment the number to three") {
+            incrementNumberTest()
+        }
     }
 }
