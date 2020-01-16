@@ -14,20 +14,16 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
     func testSignInScreen() {
 
         given("I launch the App") {
-            self.waitForElementToAppear(application.staticTexts["Username"])
+            self.waitForElementToAppear(application.staticTexts["Hello World"])
         }
 
-        when("I validate Sign in screen Ui elements") {
-            application.tapIntroScreenStaticTexts(.username)
-            application.tapIntroScreenTextField(.username)
-        }
-
-        then("I press Sign In button") {
+        when("I press Sign In button") {
             XCTAssertTrue(application.buttons["Sign In"].exists)
             application.tapIntroScreenButton(.signIn)
         }
 
         and("I should see") {
+            assertTrueStaticTexts(text: "1")
             // Assert true the Screen that appears next : )
             // If there's a loading spinner you can use self.waitForElementToAppear
         }
@@ -35,8 +31,16 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 //    IN PROGRESS
     func testIncrementTotal() {
         
-        given("I launch the App to increment the number from zero to three") {
+        given("I launch the App I validate all UI element appear") {
+            incrementScreenElementValidation()
+        }
+        
+        when("I increment the number to three") {
             incrementNumberTest()
+        }
+        
+        then("I validate that the number has been increased") {
+            assertTrueStaticTexts(text: "3")
         }
     }
 }
