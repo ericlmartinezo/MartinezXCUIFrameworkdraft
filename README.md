@@ -6,4 +6,17 @@ Xcode XCUITest framework for iOS projects
 2. Create a Scheme "MartinezXCUITest". From the Target dropdown choose the XCUITest target.
 3. Create folder structure using XCUITestArchitecture in this repo
 
+
+# Run Test from Terminal
+
+xcodebuild test -project UIautomationSample.xcodeproj -scheme SampleUiTest -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.0' -resultBundlePath TestResults
+
+# Generate HTML report
+
+xchtmlreport -r TestResults
+
+# Open report
+
+open TestResults
+
 Done!
