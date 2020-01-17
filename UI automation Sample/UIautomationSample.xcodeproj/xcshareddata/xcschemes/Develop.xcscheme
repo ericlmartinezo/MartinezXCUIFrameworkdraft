@@ -9,15 +9,15 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92B2684F23CFD68D00D09684"
-               BuildableName = "SampleUiTest.xctest"
-               BlueprintName = "SampleUiTest"
-               ReferencedContainer = "container:UI automation Sample.xcodeproj">
+               BlueprintIdentifier = "92F72EFA23CC30CB00425A8B"
+               BuildableName = "UIautomationSample.app"
+               BlueprintName = "UIautomationSample"
+               ReferencedContainer = "container:UIautomationSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92B2684F23CFD68D00D09684"
-               BuildableName = "SampleUiTest.xctest"
-               BlueprintName = "SampleUiTest"
-               ReferencedContainer = "container:UI automation Sample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92F72EFA23CC30CB00425A8B"
+            BuildableName = "UIautomationSample.app"
+            BlueprintName = "UIautomationSample"
+            ReferencedContainer = "container:UIautomationSample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "92B2684F23CFD68D00D09684"
-            BuildableName = "SampleUiTest.xctest"
-            BlueprintName = "SampleUiTest"
-            ReferencedContainer = "container:UI automation Sample.xcodeproj">
+            BlueprintIdentifier = "92F72EFA23CC30CB00425A8B"
+            BuildableName = "UIautomationSample.app"
+            BlueprintName = "UIautomationSample"
+            ReferencedContainer = "container:UIautomationSample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
