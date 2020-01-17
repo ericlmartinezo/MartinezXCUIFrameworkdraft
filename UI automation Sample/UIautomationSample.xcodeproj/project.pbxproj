@@ -48,7 +48,7 @@
 		92B2685023CFD68D00D09684 /* SampleUiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B2685223CFD68D00D09684 /* SampleUiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUiTest.swift; sourceTree = "<group>"; };
 		92B2685423CFD68D00D09684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92F72EFB23CC30CB00425A8B /* UI automation Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI automation Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F72EFB23CC30CB00425A8B /* UIautomationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIautomationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F72EFE23CC30CB00425A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F72F0023CC30CB00425A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		92F72F0323CC30CB00425A8B /* UI_automation_Sample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UI_automation_Sample.xcdatamodel; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		92F72EFC23CC30CB00425A8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92F72EFB23CC30CB00425A8B /* UI automation Sample.app */,
+				92F72EFB23CC30CB00425A8B /* UIautomationSample.app */,
 				92B2685023CFD68D00D09684 /* SampleUiTest.xctest */,
 			);
 			name = Products;
@@ -173,9 +173,9 @@
 			productReference = 92B2685023CFD68D00D09684 /* SampleUiTest.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		92F72EFA23CC30CB00425A8B /* UI automation Sample */ = {
+		92F72EFA23CC30CB00425A8B /* UIautomationSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92F72F1223CC30CD00425A8B /* Build configuration list for PBXNativeTarget "UI automation Sample" */;
+			buildConfigurationList = 92F72F1223CC30CD00425A8B /* Build configuration list for PBXNativeTarget "UIautomationSample" */;
 			buildPhases = (
 				92F72EF723CC30CB00425A8B /* Sources */,
 				92F72EF823CC30CB00425A8B /* Frameworks */,
@@ -185,9 +185,9 @@
 			);
 			dependencies = (
 			);
-			name = "UI automation Sample";
+			name = UIautomationSample;
 			productName = "UI automation Sample";
-			productReference = 92F72EFB23CC30CB00425A8B /* UI automation Sample.app */;
+			productReference = 92F72EFB23CC30CB00425A8B /* UIautomationSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92F72EF623CC30CA00425A8B /* Build configuration list for PBXProject "UI automation Sample" */;
+			buildConfigurationList = 92F72EF623CC30CA00425A8B /* Build configuration list for PBXProject "UIautomationSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92F72EFA23CC30CB00425A8B /* UI automation Sample */,
+				92F72EFA23CC30CB00425A8B /* UIautomationSample */,
 				92B2684F23CFD68D00D09684 /* SampleUiTest */,
 			);
 		};
@@ -281,7 +281,7 @@
 /* Begin PBXTargetDependency section */
 		92B2685623CFD68D00D09684 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92F72EFA23CC30CB00425A8B /* UI automation Sample */;
+			target = 92F72EFA23CC30CB00425A8B /* UIautomationSample */;
 			targetProxy = 92B2685523CFD68D00D09684 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -319,9 +319,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = emobile.SampleUiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "UI automation Sample";
+				TEST_TARGET_NAME = UIautomationSample;
 			};
 			name = Debug;
 		};
@@ -338,9 +339,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = emobile.SampleUiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "UI automation Sample";
+				TEST_TARGET_NAME = UIautomationSample;
 			};
 			name = Release;
 		};
@@ -510,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92F72EF623CC30CA00425A8B /* Build configuration list for PBXProject "UI automation Sample" */ = {
+		92F72EF623CC30CA00425A8B /* Build configuration list for PBXProject "UIautomationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92F72F1023CC30CD00425A8B /* Debug */,
@@ -519,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92F72F1223CC30CD00425A8B /* Build configuration list for PBXNativeTarget "UI automation Sample" */ = {
+		92F72F1223CC30CD00425A8B /* Build configuration list for PBXNativeTarget "UIautomationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92F72F1323CC30CD00425A8B /* Debug */,
