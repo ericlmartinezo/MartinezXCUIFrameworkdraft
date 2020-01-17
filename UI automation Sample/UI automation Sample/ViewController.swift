@@ -95,6 +95,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabelStatus(value: true)
+        overrideUserInterfaceStyle = .dark
     }
     
     func setLabelStatus(value: Bool) {

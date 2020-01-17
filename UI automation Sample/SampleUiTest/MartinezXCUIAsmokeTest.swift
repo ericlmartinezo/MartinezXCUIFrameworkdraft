@@ -11,23 +11,6 @@ import XCTest
 
 class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 //    SUDO CODE FOR DEMO
-    func testSignInScreen() {
-
-        given("I launch the App") {
-            self.waitForElementToAppear(application.staticTexts["Hello World"])
-        }
-
-        when("I press Sign In button") {
-            XCTAssertTrue(application.buttons["Sign In"].exists)
-            application.tapIntroScreenButton(.signIn)
-        }
-
-        and("I should see") {
-            assertTrueStaticTexts(text: "1")
-            // Assert true the Screen that appears next : )
-            // If there's a loading spinner you can use self.waitForElementToAppear
-        }
-    }
 //    IN PROGRESS
     func testIncrementTotal() {
         
