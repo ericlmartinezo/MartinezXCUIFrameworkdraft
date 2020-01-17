@@ -19,7 +19,7 @@ struct ContentView: View {
             Text("Username").font(.system(size: 25, weight: .bold, design: .default))
                 .font(.callout)
                 .bold()
-            TextField("Username", text: $username).font(.system(size: 25, weight: .bold, design: .default))
+            SecureField("Username", text: $username).font(.system(size: 25, weight: .bold, design: .default))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .foregroundColor(Color.blue)
                 .background(Color.blue)

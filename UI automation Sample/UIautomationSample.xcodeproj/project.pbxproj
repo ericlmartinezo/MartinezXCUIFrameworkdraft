@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9239323323D248630011794B /* TestIncrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239323223D248630011794B /* TestIncrementNumber.swift */; };
 		92A7DCD723CE6CAB0044399A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A7DCD523CE6CAB0044399A /* Main.storyboard */; };
 		92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD823CE6CCA0044399A /* ViewController.swift */; };
 		92B2685323CFD68D00D09684 /* SampleUiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2685223CFD68D00D09684 /* SampleUiTest.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9239323223D248630011794B /* TestIncrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIncrementNumber.swift; sourceTree = "<group>"; };
 		92A7DCC923CD701E0044399A /* SampleXCUITestBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXCUITestBaseClass.swift; sourceTree = "<group>"; };
 		92A7DCCB23CD706B0044399A /* XCUITest+GerkinsFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUITest+GerkinsFormatters.swift"; sourceTree = "<group>"; };
 		92A7DCCD23CD70A80044399A /* TestWaitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWaitHelper.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9239323123D2475F0011794B /* StepDefinitions */ = {
+			isa = PBXGroup;
+			children = (
+				9239323223D248630011794B /* TestIncrementNumber.swift */,
+			);
+			path = StepDefinitions;
+			sourceTree = "<group>";
+		};
 		92A7DCC623CD6FB90044399A /* PageHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		92B2685123CFD68D00D09684 /* SampleUiTest */ = {
 			isa = PBXGroup;
 			children = (
+				9239323123D2475F0011794B /* StepDefinitions */,
 				92A7DCC623CD6FB90044399A /* PageHelpers */,
 				92A7DCC723CD6FDC0044399A /* Support */,
 				92A7DCD323CD716B0044399A /* MartinezXCUIAsmokeTest.swift */,
@@ -256,6 +267,7 @@
 			files = (
 				92B2685B23CFD79A00D09684 /* SampleXCUITestBaseClass.swift in Sources */,
 				92B2685C23CFD7AB00D09684 /* XCUITest+GerkinsFormatters.swift in Sources */,
+				9239323323D248630011794B /* TestIncrementNumber.swift in Sources */,
 				92B2685F23CFD81700D09684 /* MartinezXCUIAsmokeTest.swift in Sources */,
 				92B2686123CFD87E00D09684 /* SignInScreenPageHelper.swift in Sources */,
 				92B2685323CFD68D00D09684 /* SampleUiTest.swift in Sources */,

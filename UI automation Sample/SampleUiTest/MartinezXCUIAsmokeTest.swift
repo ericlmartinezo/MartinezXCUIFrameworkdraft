@@ -10,19 +10,22 @@ import Foundation
 import XCTest
 
 class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
-//    SUDO CODE FOR DEMO
-//    IN PROGRESS
+
     func testIncrementTotal() {
         
         given("I launch the App I validate all UI element appear") {
             incrementScreenElementValidation()
         }
         
-        when("I increment the number to three") {
+        when("I enter the default username for testing") {
+            typeDefaultUsernanme()
+        }
+        
+        then("I increment the number to three") {
             incrementNumberTest()
         }
         
-        then("I validate that the number has been increased") {
+        and("I validate that the number has been increased") {
             assertTrueStaticTexts(text: "3")
         }
     }
