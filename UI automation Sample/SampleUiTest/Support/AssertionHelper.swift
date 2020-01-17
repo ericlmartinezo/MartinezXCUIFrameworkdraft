@@ -9,6 +9,8 @@
 import Foundation
 import XCTest
 
+var application = XCUIApplication()
+
 func assertTrueStaticTexts(text: String) {
         XCTAssertTrue(application.staticTexts[text].exists)
      }

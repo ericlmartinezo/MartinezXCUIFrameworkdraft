@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 
-var application = XCUIApplication()
+//var application = XCUIApplication()
 
 func typeDefaultUsernanme() {
     application.tapIntroScreenTextField(.userName)
