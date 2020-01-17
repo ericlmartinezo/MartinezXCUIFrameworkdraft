@@ -10,8 +10,7 @@ import Foundation
 import XCTest
 
 class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
-//    SUDO CODE FOR DEMO
-//    IN PROGRESS
+
     func testIncrementTotal() {
         
         given("I launch the App I validate all UI element appear") {

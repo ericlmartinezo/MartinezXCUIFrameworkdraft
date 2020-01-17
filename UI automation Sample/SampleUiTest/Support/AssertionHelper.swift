@@ -11,14 +11,16 @@ import XCTest
 
 var application = XCUIApplication()
 
-func assertTrueStaticTexts(text: String) {
-        XCTAssertTrue(application.staticTexts[text].exists)
+extension XCTestCase {
+    func assertTrueStaticTexts(text: String) {
+            XCTAssertTrue(application.staticTexts[text].exists)
+         }
+
+    func assertTrueButtons(name: String) {
+       XCTAssertTrue(application.buttons[name].exists)
      }
 
-func assertTrueButtons(name: String) {
-   XCTAssertTrue(application.buttons[name].exists)
- }
-
-func assertTrueTablesStaticText(object: String) {
-   XCTAssertTrue(application.tables.staticTexts[object].exists)
- }
+    func assertTrueTablesStaticText(object: String) {
+       XCTAssertTrue(application.tables.staticTexts[object].exists)
+     }
+}
