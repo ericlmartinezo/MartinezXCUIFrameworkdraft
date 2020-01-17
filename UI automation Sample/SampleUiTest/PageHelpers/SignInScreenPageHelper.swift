@@ -12,8 +12,9 @@ import XCTest
 enum IntroScreenBarHelper: String {
     case helloWorld = "Hello World"
     case incrementTotal = "Increment Total"
+    case userName = "Username"
+    case defaultNameEntry = "Eric"
     
-
     func introScreenStaticTexts(in application: XCUIApplication) -> XCUIElement? {
         return application.staticTexts[self.rawValue]
     }
@@ -23,7 +24,7 @@ enum IntroScreenBarHelper: String {
     }
 
     func introTextField(in application: XCUIApplication) -> XCUIElement? {
-    return application.textFields[self.rawValue]
+        return application.secureTextFields[self.rawValue]
     }
 }
 
@@ -53,15 +54,6 @@ extension XCUIApplication {
     }
 }
 
-// Step definitions
-func incrementScreenElementValidation() {
-    assertTrueStaticTexts(text: "0")
-    assertTrueButtons(name: IntroScreenBarHelper.incrementTotal.rawValue)
-}
+// Write Page methods code below this line
+// Like a Loop that taps the increment button three until it sees the number 3 
 
-func incrementNumberTest() {
-    application.tapIntroScreenButton(.incrementTotal)
-    application.tapIntroScreenButton(.incrementTotal)
-    application.tapIntroScreenButton(.incrementTotal)
-    waiting(for: application.staticTexts["3"])
-}

@@ -19,6 +19,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
         }
         
         when("I increment the number to three") {
+            typeDefaultUsernanme()
             incrementNumberTest()
         }
         
