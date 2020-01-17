@@ -17,12 +17,15 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
             incrementScreenElementValidation()
         }
         
-        when("I increment the number to three") {
+        when("I enter the default username for testing") {
             typeDefaultUsernanme()
+        }
+        
+        then("I increment the number to three") {
             incrementNumberTest()
         }
         
-        then("I validate that the number has been increased") {
+        and("I validate that the number has been increased") {
             assertTrueStaticTexts(text: "3")
         }
     }

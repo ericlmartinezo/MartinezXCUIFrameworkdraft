@@ -12,8 +12,10 @@ import XCTest
 enum IntroScreenBarHelper: String {
     case helloWorld = "Hello World"
     case incrementTotal = "Increment Total"
+    case defaultNumber = "0"
     case userName = "Username"
     case defaultNameEntry = "Eric"
+    case defaultNameEntryResult = "Your username is: Eric"
     
     func introScreenStaticTexts(in application: XCUIApplication) -> XCUIElement? {
         return application.staticTexts[self.rawValue]

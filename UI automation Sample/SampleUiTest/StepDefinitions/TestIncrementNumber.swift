@@ -14,11 +14,11 @@ extension XCTestCase {
         application.tapIntroScreenTextField(.userName)
         application.typeText(IntroScreenBarHelper.defaultNameEntry.rawValue)
         application/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap() // Soft keyboard event needs its own helper
-        assertTrueStaticTexts(text: "Your username is: Eric")
+        assertTrueStaticTexts(text: IntroScreenBarHelper.defaultNameEntryResult.rawValue)
     }
 
     func incrementScreenElementValidation() {
-        assertTrueStaticTexts(text: "0")
+        assertTrueStaticTexts(text: IntroScreenBarHelper.defaultNumber.rawValue)
         assertTrueButtons(name: IntroScreenBarHelper.incrementTotal.rawValue)
     }
 
