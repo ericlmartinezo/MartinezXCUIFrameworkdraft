@@ -10,32 +10,31 @@ import SwiftUI
 
 struct ContentView: View {
     @State var totalClicked: Int = 0
-//    var body: some View {
-//        NavigationView {
-//            VStack {
-//                Text("Hello World")
-//                NavigationLink(destination: ViewController()) {
-//                    Text("Do Something")
-//                }
-//            }
-//        }
-//    }
+    @State var username: String = ""
+    
     var body: some View {
-        VStack {
-            Text("Hello World")
+        
+        VStack(alignment: .leading, spacing: 80.0){
+            Text("Hello World").font(.largeTitle)
+            Text("Username").font(.system(size: 25, weight: .bold, design: .default))
+                .font(.callout)
+                .bold()
+            SecureField("Username", text: $username).font(.system(size: 25, weight: .bold, design: .default))
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .foregroundColor(Color.blue)
+                .background(Color.blue)
+            Text("Your username is: \(username)").font(.system(size: 25, weight: .bold, design: .default))
+                .foregroundColor(Color.orange)
+            Button(action: {self.totalClicked = self.totalClicked + 1}) {
+                Text("Increment Total").font(.system(size: 25, weight: .bold, design: .default))
+                .padding(.all, 12)
+                .foregroundColor(.white)
+                .background(Color.green)
+                }.padding(.top, 20)
             Text("\(totalClicked)").font(.title)
             Spacer()
-            Button(action: {self.totalClicked = self.totalClicked + 1}) {
-                Text("Increment Total")
-            }.padding(.all)
-            Button(action: {self.totalClicked = self.totalClicked + 1}) {
-                Text("Sign In")
-            }.padding(.all)
-        }.padding(.all, 40)
+        }.padding(.all, 10)
     }
-//    var body: some View {
-//        Text("Hello World")
-//    }
 }
 
 struct ContentView_Previews: PreviewProvider {

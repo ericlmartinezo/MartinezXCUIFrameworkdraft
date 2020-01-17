@@ -10,7 +10,8 @@ import Foundation
 import XCTest
 
 var application = XCUIApplication()
-    
+
+extension XCTestCase {
     func assertTrueStaticTexts(text: String) {
             XCTAssertTrue(application.staticTexts[text].exists)
          }
@@ -22,3 +23,4 @@ var application = XCUIApplication()
     func assertTrueTablesStaticText(object: String) {
        XCTAssertTrue(application.tables.staticTexts[object].exists)
      }
+}
