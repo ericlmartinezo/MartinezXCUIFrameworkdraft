@@ -17,7 +17,7 @@
                BlueprintIdentifier = "92B2684F23CFD68D00D09684"
                BuildableName = "SampleUiTest.xctest"
                BlueprintName = "SampleUiTest"
-               ReferencedContainer = "container:UI automation Sample.xcodeproj">
+               ReferencedContainer = "container:UIautomationSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,7 +26,11 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      systemAttachmentLifetime = "keepAlways"
+      userAttachmentLifetime = "keepAlways"
+      codeCoverageEnabled = "YES"
+      localizableStringsDataGatheringEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,8 +39,13 @@
                BlueprintIdentifier = "92B2684F23CFD68D00D09684"
                BuildableName = "SampleUiTest.xctest"
                BlueprintName = "SampleUiTest"
-               ReferencedContainer = "container:UI automation Sample.xcodeproj">
+               ReferencedContainer = "container:UIautomationSample.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SampleUiTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
@@ -63,7 +72,7 @@
             BlueprintIdentifier = "92B2684F23CFD68D00D09684"
             BuildableName = "SampleUiTest.xctest"
             BlueprintName = "SampleUiTest"
-            ReferencedContainer = "container:UI automation Sample.xcodeproj">
+            ReferencedContainer = "container:UIautomationSample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
