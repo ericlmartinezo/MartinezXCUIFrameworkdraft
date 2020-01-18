@@ -11,11 +11,18 @@ import SwiftUI
 struct ContentView: View {
     @State var totalClicked: Int = 0
     @State var username: String = ""
+//    @State private var showLinkTarget = true
     
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 80.0){
-            Text("Hello World").font(.largeTitle)
+       NavigationView {
+        VStack(alignment: .leading, spacing: 80.0) {
+
+            Text("Hello World").font(.headline)
+            NavigationLink(destination: SecondView()) {
+                Text("Show Detail View")
+                .foregroundColor(.white)
+                .background(Color.purple)
+            }.buttonStyle(PlainButtonStyle())
             Text("Username").font(.system(size: 25, weight: .bold, design: .default))
                 .font(.callout)
                 .bold()
@@ -32,13 +39,29 @@ struct ContentView: View {
                 .background(Color.green)
                 }.padding(.top, 20)
             Text("\(totalClicked)").font(.title)
-            Spacer()
-        }.padding(.all, 10)
+                Spacer()
+            }.padding(.all, 10)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+struct SecondView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 80.0) {
+                   Text("MUNDO").font(.largeTitle)
+        }.padding(.all, 10)
+    }
+}
+
+struct SecondView_Previews: PreviewProvider {
+    static var previews: some View {
+        SecondView()
     }
 }
