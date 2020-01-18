@@ -13,7 +13,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 
     func testIncrementTotal() {
         
-        given("I launch the App I validate all UI element appear") {
+        given("I launch the App I validate all first view UI element appear") {
             incrementScreenElementValidation()
         }
         
