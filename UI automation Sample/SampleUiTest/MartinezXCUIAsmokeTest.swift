@@ -29,4 +29,20 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
             assertTrueStaticTexts(text: "3")
         }
     }
+    
+    func testNavigateToSeconview() {
+        
+        given("I'm on the First View") {
+            firstViewValidation()
+        }
+        
+        when("I navigate to the second view") {
+            navigateToSecondView()
+        }
+        
+        then("I navigate back to the first view") {
+            navigateBackToFirstView()
+        }
+        
+    }
 }
