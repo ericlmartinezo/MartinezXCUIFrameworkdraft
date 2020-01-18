@@ -16,10 +16,10 @@
 		92B2685D23CFD7AF00D09684 /* TestWaitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCCD23CD70A80044399A /* TestWaitHelper.swift */; };
 		92B2685E23CFD7B300D09684 /* AssertionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCCF23CD70D70044399A /* AssertionHelper.swift */; };
 		92B2685F23CFD81700D09684 /* MartinezXCUIAsmokeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD323CD716B0044399A /* MartinezXCUIAsmokeTest.swift */; };
-		92B2686123CFD87E00D09684 /* SignInScreenPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD123CD71200044399A /* SignInScreenPageHelper.swift */; };
 		92B8E51823D38E13006DF1C2 /* SecondVIewPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51723D38E13006DF1C2 /* SecondVIewPageHelper.swift */; };
 		92B8E51A23D38E36006DF1C2 /* NavigationBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51923D38E36006DF1C2 /* NavigationBarHelper.swift */; };
 		92B8E51C23D39128006DF1C2 /* NavigateToSecondVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51B23D39128006DF1C2 /* NavigateToSecondVIew.swift */; };
+		92B8E51E23D39F27006DF1C2 /* FirstVIewPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51D23D39F27006DF1C2 /* FirstVIewPageHelper.swift */; };
 		92F72EFF23CC30CB00425A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F72EFE23CC30CB00425A8B /* AppDelegate.swift */; };
 		92F72F0123CC30CB00425A8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F72F0023CC30CB00425A8B /* SceneDelegate.swift */; };
 		92F72F0423CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92F72F0223CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld */; };
@@ -45,7 +45,6 @@
 		92A7DCCB23CD706B0044399A /* XCUITest+GerkinsFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUITest+GerkinsFormatters.swift"; sourceTree = "<group>"; };
 		92A7DCCD23CD70A80044399A /* TestWaitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWaitHelper.swift; sourceTree = "<group>"; };
 		92A7DCCF23CD70D70044399A /* AssertionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionHelper.swift; sourceTree = "<group>"; };
-		92A7DCD123CD71200044399A /* SignInScreenPageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenPageHelper.swift; sourceTree = "<group>"; };
 		92A7DCD323CD716B0044399A /* MartinezXCUIAsmokeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartinezXCUIAsmokeTest.swift; sourceTree = "<group>"; };
 		92A7DCD623CE6CAB0044399A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A7DCD823CE6CCA0044399A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		92B8E51723D38E13006DF1C2 /* SecondVIewPageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVIewPageHelper.swift; sourceTree = "<group>"; };
 		92B8E51923D38E36006DF1C2 /* NavigationBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHelper.swift; sourceTree = "<group>"; };
 		92B8E51B23D39128006DF1C2 /* NavigateToSecondVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateToSecondVIew.swift; sourceTree = "<group>"; };
+		92B8E51D23D39F27006DF1C2 /* FirstVIewPageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVIewPageHelper.swift; sourceTree = "<group>"; };
 		92F72EFB23CC30CB00425A8B /* UIautomationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIautomationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F72EFE23CC30CB00425A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F72F0023CC30CB00425A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		92A7DCC623CD6FB90044399A /* PageHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				92A7DCD123CD71200044399A /* SignInScreenPageHelper.swift */,
 				92B8E51723D38E13006DF1C2 /* SecondVIewPageHelper.swift */,
 				92B8E51923D38E36006DF1C2 /* NavigationBarHelper.swift */,
+				92B8E51D23D39F27006DF1C2 /* FirstVIewPageHelper.swift */,
 			);
 			path = PageHelpers;
 			sourceTree = "<group>";
@@ -278,10 +278,10 @@
 				92B8E51C23D39128006DF1C2 /* NavigateToSecondVIew.swift in Sources */,
 				92B2685C23CFD7AB00D09684 /* XCUITest+GerkinsFormatters.swift in Sources */,
 				92B8E51823D38E13006DF1C2 /* SecondVIewPageHelper.swift in Sources */,
+				92B8E51E23D39F27006DF1C2 /* FirstVIewPageHelper.swift in Sources */,
 				92B8E51A23D38E36006DF1C2 /* NavigationBarHelper.swift in Sources */,
 				9239323323D248630011794B /* TestIncrementNumber.swift in Sources */,
 				92B2685F23CFD81700D09684 /* MartinezXCUIAsmokeTest.swift in Sources */,
-				92B2686123CFD87E00D09684 /* SignInScreenPageHelper.swift in Sources */,
 				92B2685323CFD68D00D09684 /* SampleUiTest.swift in Sources */,
 				92B2685E23CFD7B300D09684 /* AssertionHelper.swift in Sources */,
 				92B2685D23CFD7AF00D09684 /* TestWaitHelper.swift in Sources */,
