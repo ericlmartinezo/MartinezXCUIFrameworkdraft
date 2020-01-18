@@ -19,7 +19,7 @@ struct ContentView: View {
 
             Text("Hello World").font(.headline)
             NavigationLink(destination: SecondView()) {
-                Text("Show Detail View")
+                Text("Show Second View")
                 .foregroundColor(.white)
                 .background(Color.purple)
             }.buttonStyle(PlainButtonStyle())
@@ -55,7 +55,7 @@ struct ContentView_Previews: PreviewProvider {
 struct SecondView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 80.0) {
-                   Text("MUNDO").font(.largeTitle)
+                   Text("This is the second view").font(.largeTitle)
         }.padding(.all, 10)
     }
 }

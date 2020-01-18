@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 
 enum IntroScreenBarHelper: String {
-    case helloWorld = "Hello World"
+    case showSecondView = "Show Second View"
     case incrementTotal = "Increment Total"
     case defaultNumber = "0"
     case userName = "Username"
@@ -56,6 +56,8 @@ extension XCUIApplication {
     }
 }
 
+
 // Write Page methods code below this line
 // Like a Loop that taps the increment button three until it sees the number 3 
 
+// write function tha validates all Ui elements on the first view

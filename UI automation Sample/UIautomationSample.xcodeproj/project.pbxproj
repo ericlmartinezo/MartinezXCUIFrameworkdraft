@@ -17,6 +17,9 @@
 		92B2685E23CFD7B300D09684 /* AssertionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCCF23CD70D70044399A /* AssertionHelper.swift */; };
 		92B2685F23CFD81700D09684 /* MartinezXCUIAsmokeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD323CD716B0044399A /* MartinezXCUIAsmokeTest.swift */; };
 		92B2686123CFD87E00D09684 /* SignInScreenPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD123CD71200044399A /* SignInScreenPageHelper.swift */; };
+		92B8E51823D38E13006DF1C2 /* SecondVIewPageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51723D38E13006DF1C2 /* SecondVIewPageHelper.swift */; };
+		92B8E51A23D38E36006DF1C2 /* NavigationBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51923D38E36006DF1C2 /* NavigationBarHelper.swift */; };
+		92B8E51C23D39128006DF1C2 /* NavigateToSecondVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8E51B23D39128006DF1C2 /* NavigateToSecondVIew.swift */; };
 		92F72EFF23CC30CB00425A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F72EFE23CC30CB00425A8B /* AppDelegate.swift */; };
 		92F72F0123CC30CB00425A8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F72F0023CC30CB00425A8B /* SceneDelegate.swift */; };
 		92F72F0423CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92F72F0223CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld */; };
@@ -50,6 +53,9 @@
 		92B2685023CFD68D00D09684 /* SampleUiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUiTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B2685223CFD68D00D09684 /* SampleUiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUiTest.swift; sourceTree = "<group>"; };
 		92B2685423CFD68D00D09684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B8E51723D38E13006DF1C2 /* SecondVIewPageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVIewPageHelper.swift; sourceTree = "<group>"; };
+		92B8E51923D38E36006DF1C2 /* NavigationBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHelper.swift; sourceTree = "<group>"; };
+		92B8E51B23D39128006DF1C2 /* NavigateToSecondVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateToSecondVIew.swift; sourceTree = "<group>"; };
 		92F72EFB23CC30CB00425A8B /* UIautomationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIautomationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F72EFE23CC30CB00425A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F72F0023CC30CB00425A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9239323223D248630011794B /* TestIncrementNumber.swift */,
+				92B8E51B23D39128006DF1C2 /* NavigateToSecondVIew.swift */,
 			);
 			path = StepDefinitions;
 			sourceTree = "<group>";
@@ -91,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				92A7DCD123CD71200044399A /* SignInScreenPageHelper.swift */,
+				92B8E51723D38E13006DF1C2 /* SecondVIewPageHelper.swift */,
+				92B8E51923D38E36006DF1C2 /* NavigationBarHelper.swift */,
 			);
 			path = PageHelpers;
 			sourceTree = "<group>";
@@ -266,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B2685B23CFD79A00D09684 /* SampleXCUITestBaseClass.swift in Sources */,
+				92B8E51C23D39128006DF1C2 /* NavigateToSecondVIew.swift in Sources */,
 				92B2685C23CFD7AB00D09684 /* XCUITest+GerkinsFormatters.swift in Sources */,
+				92B8E51823D38E13006DF1C2 /* SecondVIewPageHelper.swift in Sources */,
+				92B8E51A23D38E36006DF1C2 /* NavigationBarHelper.swift in Sources */,
 				9239323323D248630011794B /* TestIncrementNumber.swift in Sources */,
 				92B2685F23CFD81700D09684 /* MartinezXCUIAsmokeTest.swift in Sources */,
 				92B2686123CFD87E00D09684 /* SignInScreenPageHelper.swift in Sources */,
