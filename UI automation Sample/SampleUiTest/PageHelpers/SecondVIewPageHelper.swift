@@ -26,5 +26,4 @@ extension XCUIApplication {
         }
         element.tap()
     }
-
 }

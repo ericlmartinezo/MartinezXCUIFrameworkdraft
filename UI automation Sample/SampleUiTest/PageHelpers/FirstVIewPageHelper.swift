@@ -25,7 +25,7 @@ enum FirstVIewPageHelper: String {
     case userName = "Username"
     case defaultNameEntry = "Eric"
     case defaultNameEntryResult = "Your username is: Eric"
-//    firstViewin
+
     func firstViewStaticTexts(in application: XCUIApplication) -> XCUIElement? {
         return application.staticTexts[self.rawValue]
     }

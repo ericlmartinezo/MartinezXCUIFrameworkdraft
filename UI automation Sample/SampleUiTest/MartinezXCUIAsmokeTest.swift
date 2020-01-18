@@ -43,6 +43,5 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
         then("I navigate back to the first view") {
             navigateBackToFirstView()
         }
-        
     }
 }
