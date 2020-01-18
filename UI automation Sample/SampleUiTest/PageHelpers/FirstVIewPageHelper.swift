@@ -19,7 +19,8 @@ import Foundation
 import XCTest
 
 enum FirstVIewPageHelper: String {
-    case showSecondView = "Show Second View"
+    case viewTitle = "              First View"
+    case showSecondView = "                     Show Second View                            "
     case incrementTotal = "Increment Total"
     case defaultNumber = "0"
     case userName = "Username"

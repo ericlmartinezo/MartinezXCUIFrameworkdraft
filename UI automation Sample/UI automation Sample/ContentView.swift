@@ -15,14 +15,15 @@ struct ContentView: View {
     
     var body: some View {
        NavigationView {
-        VStack(alignment: .leading, spacing: 80.0) {
+        VStack(alignment: .leading, spacing: 10.0) {
 
-            Text("Hello World").font(.headline)
-            NavigationLink(destination: SecondView()) {
-                Text("Show Second View")
-                .foregroundColor(.white)
-                .background(Color.purple)
-            }.buttonStyle(PlainButtonStyle())
+            Text("              First View").font(.largeTitle)
+//            NavigationLink(destination: SecondView()) {
+//                Text("Show Second View").font(.system(size: 25, weight: .bold, design: .default))
+//                .foregroundColor(.white)
+//                .background(Color.blue)
+//            }.buttonStyle(PlainButtonStyle())
+            
             Text("Username").font(.system(size: 25, weight: .bold, design: .default))
                 .font(.callout)
                 .bold()
@@ -40,6 +41,11 @@ struct ContentView: View {
                 }.padding(.top, 20)
             Text("\(totalClicked)").font(.title)
                 Spacer()
+            NavigationLink(destination: SecondView()) {
+                Text("                     Show Second View                            ").font(.system(size: 20, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .background(Color.blue)
+            }.buttonStyle(PlainButtonStyle())
             }.padding(.all, 10)
         }
     }
@@ -51,11 +57,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
 struct SecondView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 80.0) {
-                   Text("This is the second view").font(.largeTitle)
+            Text("This is the second view").font(.largeTitle)
         }.padding(.all, 10)
     }
 }
