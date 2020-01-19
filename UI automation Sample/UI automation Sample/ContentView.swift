@@ -11,19 +11,11 @@ import SwiftUI
 struct ContentView: View {
     @State var totalClicked: Int = 0
     @State var username: String = ""
-//    @State private var showLinkTarget = true
     
     var body: some View {
        NavigationView {
         VStack(alignment: .leading, spacing: 10.0) {
-
             Text("              First View").font(.largeTitle)
-//            NavigationLink(destination: SecondView()) {
-//                Text("Show Second View").font(.system(size: 25, weight: .bold, design: .default))
-//                .foregroundColor(.white)
-//                .background(Color.blue)
-//            }.buttonStyle(PlainButtonStyle())
-            
             Text("Username").font(.system(size: 25, weight: .bold, design: .default))
                 .font(.callout)
                 .bold()
