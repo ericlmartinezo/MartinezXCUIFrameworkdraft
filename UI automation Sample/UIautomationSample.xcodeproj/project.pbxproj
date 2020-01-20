@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9239323323D248630011794B /* TestIncrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239323223D248630011794B /* TestIncrementNumber.swift */; };
+		929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682B923D5792A008F0B3C /* MovieModel.swift */; };
+		929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682BB23D57AFF008F0B3C /* MovieFetcher.swift */; };
 		92A7DCD723CE6CAB0044399A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A7DCD523CE6CAB0044399A /* Main.storyboard */; };
 		92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD823CE6CCA0044399A /* ViewController.swift */; };
 		92B2685323CFD68D00D09684 /* SampleUiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2685223CFD68D00D09684 /* SampleUiTest.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		9239323223D248630011794B /* TestIncrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIncrementNumber.swift; sourceTree = "<group>"; };
+		929682B923D5792A008F0B3C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		929682BB23D57AFF008F0B3C /* MovieFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFetcher.swift; sourceTree = "<group>"; };
 		92A7DCC923CD701E0044399A /* SampleXCUITestBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXCUITestBaseClass.swift; sourceTree = "<group>"; };
 		92A7DCCB23CD706B0044399A /* XCUITest+GerkinsFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUITest+GerkinsFormatters.swift"; sourceTree = "<group>"; };
 		92A7DCCD23CD70A80044399A /* TestWaitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWaitHelper.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				92F72F0F23CC30CD00425A8B /* Info.plist */,
 				92F72F0223CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld */,
 				92F72F0923CC30CD00425A8B /* Preview Content */,
+				929682B923D5792A008F0B3C /* MovieModel.swift */,
+				929682BB23D57AFF008F0B3C /* MovieFetcher.swift */,
 			);
 			path = "UI automation Sample";
 			sourceTree = "<group>";
@@ -292,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */,
+				929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */,
 				92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */,
 				92F72EFF23CC30CB00425A8B /* AppDelegate.swift in Sources */,
 				92F72F0123CC30CB00425A8B /* SceneDelegate.swift in Sources */,
