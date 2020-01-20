@@ -12,7 +12,7 @@ import XCTest
 class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
 
     func testIncrementTotal() {
-        
+                
         given("I launch the App I validate all first view UI element appear") {
             incrementScreenElementValidation()
         }
@@ -38,6 +38,10 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
         
         when("I navigate to the second view") {
             navigateToSecondView()
+        }
+        
+        then("I validate that the list of movies appear") {
+            validateMoviesInTableView()
         }
         
         then("I navigate back to the first view") {

@@ -21,6 +21,12 @@ extension XCTestCase {
         assertTrueStaticTexts(text: SecondViewPageHelper.secondViewTitle.rawValue)
     }
     
+    func validateMoviesInTableView() {
+        movieListInTable()
+        application.findSecondViewTableStaticText(.propertyJoker)
+        application.findSecondViewTableStaticText(.propertyJokerRelease)
+    }
+    
     func navigateBackToFirstView() {
         application.tapNavBarButton(.navBarBackButton)
         self.waitForElementToAppear(FirstVIewPageHelper.showSecondView.firstViewButton(in: application.self)!)

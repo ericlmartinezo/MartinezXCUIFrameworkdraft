@@ -5,7 +5,7 @@
 //  Created by Eric Martinez on 1/12/20.
 //  Copyright © 2020 emobile. All rights reserved.
 //
-
+import Foundation
 import SwiftUI
 
 struct ContentView: View {
@@ -50,9 +50,19 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct SecondView: View {
+    @ObservedObject var fetcher = MovieFetcher()
     var body: some View {
-        VStack(alignment: .leading, spacing: 80.0) {
+        VStack(alignment: .leading, spacing: 10.0) {
             Text("This is the second view").font(.largeTitle)
+            List(fetcher.movies) { movie in
+                VStack (alignment: .leading) {
+                    Text(movie.name)
+                    Text(movie.released)
+                        .font(.system(size: 11))
+                        .foregroundColor(Color.gray)
+                }
+            }
+            
         }.padding(.all, 10)
     }
 }
