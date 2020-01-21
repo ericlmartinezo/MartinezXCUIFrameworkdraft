@@ -28,4 +28,12 @@ extension XCTestCase {
         application.tapfirstViewButton(.incrementTotal)
         waiting(for: application.staticTexts["3"])
     }
+    
+    func defaultDataPersist() {
+        application.tapfirstViewButton(.showSecondView)
+        self.waitForElementToAppear(NavigationBarHelper.navBarBackButton.navBarButton(in: application.self)!)
+        application.tapNavBarButton(.navBarBackButton)
+        assertTrueStaticTexts(text: FirstVIewPageHelper.defaultNameEntryResult.rawValue)
+        waiting(for: application.staticTexts["3"])
+    }
 }

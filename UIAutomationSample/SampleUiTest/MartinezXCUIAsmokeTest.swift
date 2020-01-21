@@ -26,7 +26,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
         }
         
         and("I validate that the number has been increased") {
-            assertTrueStaticTexts(text: "3")
+            defaultDataPersist()
         }
     }
     

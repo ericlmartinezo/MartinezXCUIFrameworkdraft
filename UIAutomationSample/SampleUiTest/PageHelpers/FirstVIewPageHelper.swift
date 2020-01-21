@@ -4,16 +4,6 @@
 //
 //  Created by Eric Martinez on 1/18/20.
 //  Copyright © 2020 emobile. All rights reserved.
-//
-
-import Foundation
-//
-//  SignInScreenPageHelper.swift
-//  SampleXCUITests
-//
-//  Created by Eric Martinez on 1/13/20.
-//  Copyright © 2020 emobile. All rights reserved.
-//
 
 import Foundation
 import XCTest
@@ -65,9 +55,3 @@ extension XCUIApplication {
         element.tap()
     }
 }
-
-
-// Write Page methods code below this line
-// Like a Loop that taps the increment button three until it sees the number 3
-
-// write function tha validates all Ui elements on the first view
