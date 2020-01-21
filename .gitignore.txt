@@ -1,1 +1,5 @@
 XCUITestArchitecture/UIAutomationSample/UIautomationSample.xcworkspace/xcuserdata/ericlmartinez.xcuserdatad/UserInterfaceState.xcuserstate
+
+## Build generated
+build/
+DerivedData/
