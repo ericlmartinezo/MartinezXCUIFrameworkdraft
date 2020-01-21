@@ -1,1 +1,1 @@
-XCUITestArchitecture/UI\ automation\ Sample/UIautomationSample.xcworkspace/xcuserdata/ericlmartinez.xcuserdatad/UserInterfaceState.xcuserstat
+XCUITestArchitecture/UIAutomationSample/UIautomationSample.xcworkspace/xcuserdata/ericlmartinez.xcuserdatad/UserInterfaceState.xcuserstate
