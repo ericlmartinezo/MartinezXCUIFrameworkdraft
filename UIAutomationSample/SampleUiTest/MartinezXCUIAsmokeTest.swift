@@ -25,7 +25,7 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
             incrementNumberTest()
         }
         
-        and("I validate that the number has been increased") {
+        and("I validate that the data persists after navigating back from the second view") {
             defaultDataPersist()
         }
     }
@@ -40,11 +40,11 @@ class MartinezXCUIAsmokeTest: MartinezBaseXCUITestHelper {
             navigateToSecondView()
         }
         
-        then("I validate that the list of movies appear") {
+        then("I validate that the list of movies appears") {
             validateMoviesInTableView()
         }
         
-        then("I navigate back to the first view") {
+        and("I navigate back to the first view") {
             navigateBackToFirstView()
         }
     }
