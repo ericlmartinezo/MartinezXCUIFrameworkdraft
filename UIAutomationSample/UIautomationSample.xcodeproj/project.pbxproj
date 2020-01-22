@@ -10,6 +10,7 @@
 		9239323323D248630011794B /* TestIncrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239323223D248630011794B /* TestIncrementNumber.swift */; };
 		929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682B923D5792A008F0B3C /* MovieModel.swift */; };
 		929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682BB23D57AFF008F0B3C /* MovieFetcher.swift */; };
+		929A984F23D7E17400F7534C /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A984E23D7E17400F7534C /* SecondView.swift */; };
 		92A7DCD723CE6CAB0044399A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A7DCD523CE6CAB0044399A /* Main.storyboard */; };
 		92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7DCD823CE6CCA0044399A /* ViewController.swift */; };
 		92B2685323CFD68D00D09684 /* SampleUiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2685223CFD68D00D09684 /* SampleUiTest.swift */; };
@@ -45,6 +46,7 @@
 		9239323223D248630011794B /* TestIncrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIncrementNumber.swift; sourceTree = "<group>"; };
 		929682B923D5792A008F0B3C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		929682BB23D57AFF008F0B3C /* MovieFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFetcher.swift; sourceTree = "<group>"; };
+		929A984E23D7E17400F7534C /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		92A7DCC923CD701E0044399A /* SampleXCUITestBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXCUITestBaseClass.swift; sourceTree = "<group>"; };
 		92A7DCCB23CD706B0044399A /* XCUITest+GerkinsFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUITest+GerkinsFormatters.swift"; sourceTree = "<group>"; };
 		92A7DCCD23CD70A80044399A /* TestWaitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWaitHelper.swift; sourceTree = "<group>"; };
@@ -96,6 +98,15 @@
 				92B8E51B23D39128006DF1C2 /* NavigateToSecondVIew.swift */,
 			);
 			path = StepDefinitions;
+			sourceTree = "<group>";
+		};
+		929A984D23D7E13A00F7534C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92F72F0523CC30CB00425A8B /* ContentView.swift */,
+				929A984E23D7E17400F7534C /* SecondView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		92A7DCC623CD6FB90044399A /* PageHelpers */ = {
@@ -154,11 +165,11 @@
 		92F72EFD23CC30CB00425A8B /* UI automation Sample */ = {
 			isa = PBXGroup;
 			children = (
+				929A984D23D7E13A00F7534C /* Views */,
 				92A7DCD823CE6CCA0044399A /* ViewController.swift */,
 				92A7DCD523CE6CAB0044399A /* Main.storyboard */,
 				92F72EFE23CC30CB00425A8B /* AppDelegate.swift */,
 				92F72F0023CC30CB00425A8B /* SceneDelegate.swift */,
-				92F72F0523CC30CB00425A8B /* ContentView.swift */,
 				92F72F0723CC30CD00425A8B /* Assets.xcassets */,
 				92F72F0C23CC30CD00425A8B /* LaunchScreen.storyboard */,
 				92F72F0F23CC30CD00425A8B /* Info.plist */,
@@ -300,6 +311,7 @@
 			files = (
 				929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */,
 				929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */,
+				929A984F23D7E17400F7534C /* SecondView.swift in Sources */,
 				92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */,
 				92F72EFF23CC30CB00425A8B /* AppDelegate.swift in Sources */,
 				92F72F0123CC30CB00425A8B /* SceneDelegate.swift in Sources */,
