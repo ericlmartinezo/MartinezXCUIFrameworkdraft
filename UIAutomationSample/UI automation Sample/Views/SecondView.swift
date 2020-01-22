@@ -22,6 +22,11 @@ struct SecondView: View {
                         .foregroundColor(Color.gray)
                 }
             }
+            NavigationLink(destination: WeatherView().self) {
+                Text("                     Show Third View                            ").font(.system(size: 20, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .background(Color.blue)
+            }.buttonStyle(PlainButtonStyle())
             
         }.padding(.all, 10)
     }

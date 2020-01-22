@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9204723C23D7E8A800409D67 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204723B23D7E8A800409D67 /* WeatherModel.swift */; };
+		9204723E23D7E93F00409D67 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204723D23D7E93F00409D67 /* WeatherFetcher.swift */; };
+		9204724023D7ECCF00409D67 /* WeatherVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204723F23D7ECCF00409D67 /* WeatherVIew.swift */; };
 		9239323323D248630011794B /* TestIncrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239323223D248630011794B /* TestIncrementNumber.swift */; };
 		929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682B923D5792A008F0B3C /* MovieModel.swift */; };
 		929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682BB23D57AFF008F0B3C /* MovieFetcher.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9204723B23D7E8A800409D67 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		9204723D23D7E93F00409D67 /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
+		9204723F23D7ECCF00409D67 /* WeatherVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVIew.swift; sourceTree = "<group>"; };
 		9239323223D248630011794B /* TestIncrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIncrementNumber.swift; sourceTree = "<group>"; };
 		929682B923D5792A008F0B3C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		929682BB23D57AFF008F0B3C /* MovieFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFetcher.swift; sourceTree = "<group>"; };
@@ -91,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9204723A23D7E84300409D67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9204723B23D7E8A800409D67 /* WeatherModel.swift */,
+				9204723D23D7E93F00409D67 /* WeatherFetcher.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		9239323123D2475F0011794B /* StepDefinitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,7 @@
 			children = (
 				92F72F0523CC30CB00425A8B /* ContentView.swift */,
 				929A984E23D7E17400F7534C /* SecondView.swift */,
+				9204723F23D7ECCF00409D67 /* WeatherVIew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +181,7 @@
 		92F72EFD23CC30CB00425A8B /* UI automation Sample */ = {
 			isa = PBXGroup;
 			children = (
+				9204723A23D7E84300409D67 /* ViewModels */,
 				929A984D23D7E13A00F7534C /* Views */,
 				92A7DCD823CE6CCA0044399A /* ViewController.swift */,
 				92A7DCD523CE6CAB0044399A /* Main.storyboard */,
@@ -312,8 +329,11 @@
 				929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */,
 				929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */,
 				929A984F23D7E17400F7534C /* SecondView.swift in Sources */,
+				9204724023D7ECCF00409D67 /* WeatherVIew.swift in Sources */,
 				92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */,
+				9204723C23D7E8A800409D67 /* WeatherModel.swift in Sources */,
 				92F72EFF23CC30CB00425A8B /* AppDelegate.swift in Sources */,
+				9204723E23D7E93F00409D67 /* WeatherFetcher.swift in Sources */,
 				92F72F0123CC30CB00425A8B /* SceneDelegate.swift in Sources */,
 				92F72F0623CC30CB00425A8B /* ContentView.swift in Sources */,
 				92F72F0423CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld in Sources */,
