@@ -14,15 +14,17 @@ struct QuiverView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10.0) {
-            Text("This is the Quiver view").font(.largeTitle)
+            Text("           My Quiver").font(.system(size: 40, weight: .bold, design: .default))
+                .foregroundColor(Color.orange)
             List(fetcher.quiver) { quiv in
                 VStack (alignment: .leading) {
-                    Text("Brand: \(quiv.sail)").font(.system(size: 20, weight: .bold, design: .default))
-                    Text("Model: \(quiv.model)").font(.system(size: 17, weight: .bold, design: .default))
-                    Text("Size: \(quiv.size)")
-                    Text("Boom Size: \(quiv.boom)")
-                    Text("Extension: \(quiv.extSize)")
-                    Text("Mast Size: \(quiv.mast)")
+                    Text("Brand: \(quiv.sail!)").font(.system(size: 20, weight: .bold, design: .default))
+                        .foregroundColor(Color.purple)
+                    Text("Model: \(quiv.model!)").font(.system(size: 17, weight: .bold, design: .default))
+                    Text("Size: \(quiv.size!)")
+                    Text("Boom Size: \(quiv.boom!)")
+                    Text("Extension: \(quiv.extSize!)")
+                    Text("Mast Size: \(quiv.mast!)")
                 }
             }
         }.padding(.all, 10)
