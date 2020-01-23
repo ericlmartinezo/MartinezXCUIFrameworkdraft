@@ -22,7 +22,11 @@ struct SecondView: View {
                         .foregroundColor(Color.gray)
                 }
             }
-            
+            NavigationLink(destination: QuiverView().self) {
+                Text("                       Show Quiver View                            ").font(.system(size: 20, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .background(Color.blue)
+            }.buttonStyle(PlainButtonStyle())
         }.padding(.all, 10)
     }
 }
