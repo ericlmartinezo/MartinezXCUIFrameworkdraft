@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9204724223D9349500409D67 /* QuiverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204724123D9349500409D67 /* QuiverModel.swift */; };
+		9204724423D937FA00409D67 /* QuiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204724323D937FA00409D67 /* QuiverView.swift */; };
+		9204724623D938B200409D67 /* QuiverFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204724523D938B200409D67 /* QuiverFetcher.swift */; };
 		9239323323D248630011794B /* TestIncrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239323223D248630011794B /* TestIncrementNumber.swift */; };
 		929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682B923D5792A008F0B3C /* MovieModel.swift */; };
 		929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929682BB23D57AFF008F0B3C /* MovieFetcher.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9204724123D9349500409D67 /* QuiverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiverModel.swift; sourceTree = "<group>"; };
+		9204724323D937FA00409D67 /* QuiverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiverView.swift; sourceTree = "<group>"; };
+		9204724523D938B200409D67 /* QuiverFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiverFetcher.swift; sourceTree = "<group>"; };
 		9239323223D248630011794B /* TestIncrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIncrementNumber.swift; sourceTree = "<group>"; };
 		929682B923D5792A008F0B3C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		929682BB23D57AFF008F0B3C /* MovieFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFetcher.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 			children = (
 				92F72F0523CC30CB00425A8B /* ContentView.swift */,
 				929A984E23D7E17400F7534C /* SecondView.swift */,
+				9204724323D937FA00409D67 /* QuiverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 				92F72F0923CC30CD00425A8B /* Preview Content */,
 				929682B923D5792A008F0B3C /* MovieModel.swift */,
 				929682BB23D57AFF008F0B3C /* MovieFetcher.swift */,
+				9204724123D9349500409D67 /* QuiverModel.swift */,
+				9204724523D938B200409D67 /* QuiverFetcher.swift */,
 			);
 			path = "UI automation Sample";
 			sourceTree = "<group>";
@@ -311,10 +320,13 @@
 			files = (
 				929682BC23D57AFF008F0B3C /* MovieFetcher.swift in Sources */,
 				929682BA23D5792B008F0B3C /* MovieModel.swift in Sources */,
+				9204724423D937FA00409D67 /* QuiverView.swift in Sources */,
 				929A984F23D7E17400F7534C /* SecondView.swift in Sources */,
+				9204724223D9349500409D67 /* QuiverModel.swift in Sources */,
 				92A7DCD923CE6CCA0044399A /* ViewController.swift in Sources */,
 				92F72EFF23CC30CB00425A8B /* AppDelegate.swift in Sources */,
 				92F72F0123CC30CB00425A8B /* SceneDelegate.swift in Sources */,
+				9204724623D938B200409D67 /* QuiverFetcher.swift in Sources */,
 				92F72F0623CC30CB00425A8B /* ContentView.swift in Sources */,
 				92F72F0423CC30CB00425A8B /* UI_automation_Sample.xcdatamodeld in Sources */,
 			);

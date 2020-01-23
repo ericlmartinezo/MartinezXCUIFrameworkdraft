@@ -25,7 +25,7 @@ public class MovieFetcher: ObservableObject {
                     DispatchQueue.main.async {
                         self.movies = decodedLists
                     }
-                }else {
+                } else {
                     print("No Data")
                 }
             } catch {
