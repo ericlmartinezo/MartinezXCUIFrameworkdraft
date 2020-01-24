@@ -27,6 +27,11 @@ struct SecondView: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
             }.buttonStyle(PlainButtonStyle())
+            NavigationLink(destination: RigEntryView().self) {
+                Text("                       Show Rig Entry View                            ").font(.system(size: 20, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .background(Color.blue)
+            }.buttonStyle(PlainButtonStyle())
         }.padding(.all, 10)
     }
 }
