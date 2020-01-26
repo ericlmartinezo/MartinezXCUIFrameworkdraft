@@ -62,7 +62,7 @@ let quiverJson = """
 
 """.data(using: .utf8)!
 
-struct Rigs: Decodable, Identifiable {
+struct Rigs: Decodable, Identifiable, Encodable {
     public var id: Int?
     public var sail: String?
     public var model: String?
