@@ -32,24 +32,76 @@ struct RigEntryView: View {
             TextField("Extension", text: $extensionSize)
             TextField("Mast", text: $mast)
             Text("                      Ready for Sailing!").font(.system(size: 20, weight: .bold, design: .default))
-                .foregroundColor(Color.blue) // This will get submit button
-//            Button needs work
+                .foregroundColor(Color.blue) // Replace with Save button from realm
+//            Button needs work DISPLAY
             List {
                 Button(action: {
-                    
                     let config = Realm.Configuration(schemaVersion: 1 )
-                    do{
+                    do {
                         let realm = try Realm(configuration: config)
-                        let result = realm.objects(datatype.self)
+                        let result = realm.objects(DataType.self)
+                        
                         print(result)
                     }
-                    catch{
+                    catch {
                         print(error.localizedDescription)
                     }
-
-                }) {
-                    Text("Display")
+                })
+                {
+                    Text("Display").foregroundColor(Color.purple)
             }
+            //            EDIT
+            Button(action: {
+                let config = Realm.Configuration(schemaVersion: 1 )
+                do {
+                    let realm = try Realm(configuration: config)
+                    let result = realm.objects(DataType.self)
+                    
+                    for i in result{
+                        try realm.write({
+                            if i.brand == self.brand {
+                                i.model = ""
+                                i.size = ""
+                                i.boom = ""
+                                i.extensionSize = ""
+                                i.mast = ""
+                                realm.add(i)
+                            }
+                        })
+                    }
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            })
+            {
+                Text("Edit").foregroundColor(Color.red)
+            }
+        
+//                DELETE
+            Button(action: {
+                let config = Realm.Configuration(schemaVersion: 1 )
+                do {
+                    let realm = try Realm(configuration: config)
+                    let result = realm.objects(DataType.self)
+                    
+                    for i in result{
+                        try realm.write ({
+                            if i.brand == self.brand {
+                                realm.delete(i)
+                            }
+                        })
+                    }
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }) {
+                Text("Delete").foregroundColor(Color.red)
+            }
+                
+//    UI Display              UI Display    UI Display     UI Display    UI Display   UI Display
+
                 Text("Brand: \(brand)")
                 Text("Model: \(model)")
                 Text("Size: \(size)")
@@ -60,28 +112,28 @@ struct RigEntryView: View {
             .font(.system(size: 20, weight: .bold, design: .default))
             .foregroundColor(Color.orange)
             
-//            BEGINNING
+            
+//            BEGINNING SAVE ENTRY
             Button(action: {
                 
                 let config = Realm.Configuration(schemaVersion: 1 )
-                do{
+                do {
                     let realm = try Realm(configuration: config)
-                    let newdata = datatype()
+                    let newdata = DataType()
                     newdata.brand = self.brand
                     newdata.model = self.model
-                    newdata.size = self.brand
+                    newdata.size = self.size
                     newdata.boom = self.model
                     newdata.extensionSize = self.extensionSize
                     newdata.mast = self.mast
-                    try realm.write({
+                    try realm.write ({
                         realm.add(newdata)
-                        print("success")
+                        print("saving success")
                     })
                 }
-                catch{
+                catch {
                     print(error.localizedDescription)
                 }
-
             }) {
                 Text("Save")
             }
@@ -97,14 +149,4 @@ struct RigEntryView_Previews: PreviewProvider {
     static var previews: some View {
         RigEntryView()
     }
-}
-
-class datatype: Object {
-
-        @objc dynamic var brand = ""
-        @objc dynamic var model = ""
-        @objc dynamic var size = ""
-        @objc dynamic var boom = ""
-        @objc dynamic var extensionSize = ""
-        @objc dynamic var mast = ""
 }

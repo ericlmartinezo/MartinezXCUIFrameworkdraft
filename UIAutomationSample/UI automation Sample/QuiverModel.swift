@@ -11,7 +11,7 @@ import Foundation
 let quiverJson = """
     [{
         "id": 1,
-        "sail": "North",
+        "brand": "North",
         "model": "Natural",
         "size": "5.8",
         "boom": "185",
@@ -20,7 +20,7 @@ let quiverJson = """
     },
     {
         "id": 2,
-        "sail": "Ezzy",
+        "brand": "Ezzy",
         "model": "Wave",
         "size": "5.0",
         "boom": "140",
@@ -28,7 +28,7 @@ let quiverJson = """
         "mast": "400"
     },{
         "id": 3,
-        "sail": "Neil Pryde",
+        "brand": "Neil Pryde",
         "model": "Wave",
         "size": "4.2",
         "boom": "140",
@@ -36,7 +36,7 @@ let quiverJson = """
         "mast": "400"
     },{
         "id": 4,
-        "sail": "Gaastra",
+        "brand": "Gaastra",
         "model": "Wave",
         "size": "4.6",
         "boom": "140",
@@ -44,7 +44,7 @@ let quiverJson = """
         "mast": "400"
     },{
         "id": 5,
-        "sail": "Gaastra",
+        "brand": "Gaastra",
         "model": "Freeride",
         "size": "6.3",
         "boom": "140",
@@ -52,7 +52,7 @@ let quiverJson = """
         "mast": "430"
     },{
         "id": 6,
-        "sail": "Ezzy",
+        "brand": "Ezzy",
         "model": "Wave",
         "size": "3.8",
         "boom": "140",
@@ -64,7 +64,7 @@ let quiverJson = """
 
 struct Rigs: Decodable, Identifiable, Encodable {
     public var id: Int?
-    public var sail: String?
+    public var brand: String?
     public var model: String?
     public var size: String?
     public var boom: String?
@@ -73,7 +73,7 @@ struct Rigs: Decodable, Identifiable, Encodable {
     
     enum CodingLlaves: String, CodingKey {
            case id = "id"
-           case sail = "sail"
+           case brand = "sail"
            case model = "model"
            case size = "size"
            case boom = "boom"

@@ -6,27 +6,14 @@
 //  Copyright © 2020 emobile. All rights reserved.
 //
 
-//import Foundation
-//import RealmSwift
-//
-//public class CreateRig: Object {
-//
-//        @objc dynamic var sail: String?
-//        @objc dynamic var model: String?
-//        @objc dynamic var size: String?
-//        @objc dynamic var boom: String?
-//        @objc dynamic var extSize: String?
-//        @objc dynamic var mast: String?
-//
-//
+import Foundation
+import RealmSwift
 
-//    func writeToDataBase() {
-//
-//        let newRig = CreateRig()
-//        let realm = try! Realm()
-//
-//        try! realm.write {
-//            realm.add(newRig)
-//        }
-//    }
-//}
+public class DataType: Object, ObservableObject {
+    @objc dynamic var brand = ""
+    @objc dynamic var model = ""
+    @objc dynamic var size = ""
+    @objc dynamic var boom = ""
+    @objc dynamic var extensionSize = ""
+    @objc dynamic var mast = ""
+}

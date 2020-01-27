@@ -18,7 +18,7 @@ struct QuiverView: View {
                 .foregroundColor(Color.orange)
             List(fetcher.quiver) { quiv in
                 VStack (alignment: .leading) {
-                    Text("Brand: \(quiv.sail!)").font(.system(size: 20, weight: .bold, design: .default))
+                    Text("Brand: \(quiv.brand!)").font(.system(size: 20, weight: .bold, design: .default))
                         .foregroundColor(Color.purple)
                     Text("Model: \(quiv.model!)").font(.system(size: 17, weight: .bold, design: .default))
                     Text("Size: \(quiv.size!)")

@@ -20,6 +20,7 @@ public class QuiverFetcher: ObservableObject {
     
     func load() {
         let quiverInfo = try! decoder.decode(Array<Rigs>.self, from: quiverJson)
+        
         do {
             if quiverInfo.isEmpty {
                 print("data is not available")
