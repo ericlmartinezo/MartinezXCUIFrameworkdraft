@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 public class QuiverPost: ObservableObject {
 
