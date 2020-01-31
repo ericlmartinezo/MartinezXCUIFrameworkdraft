@@ -14,7 +14,7 @@ struct QuiverView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10.0) {
-            Text("           My Quiver").font(.system(size: 40, weight: .bold, design: .default))
+            Text("           My Quiver").font(.system(size: 35, weight: .bold, design: .default))
                 .foregroundColor(Color.orange)
             List(fetcher.quiver) { quiv in
                 VStack (alignment: .leading) {
@@ -28,6 +28,7 @@ struct QuiverView: View {
                 }
             }
         }.padding(.all, 10)
+        .offset(y: -60)
     }
 }
 

@@ -1,14 +1,3 @@
-//
-//  QuiverModel.swift
-//  UIautomationSample
-//
-//  Created by Eric Martinez on 1/22/20.
-//  Copyright © 2020 emobile. All rights reserved.
-//
-
-import Foundation
-
-let quiverJson = """
     [{
         "id": 1,
         "sail": "North",
@@ -59,25 +48,3 @@ let quiverJson = """
         "extSize": "20",
         "mast": "370"
     }]
-
-""".data(using: .utf8)!
-
-struct Rigs: Decodable, Identifiable, Encodable {
-    public var id: Int?
-    public var sail: String?
-    public var model: String?
-    public var size: String?
-    public var boom: String?
-    public var extSize: String?
-    public var mast: String?
-    
-    enum CodingLlaves: String, CodingKey {
-           case id = "id"
-           case sail = "sail"
-           case model = "model"
-           case size = "size"
-           case boom = "boom"
-           case extSize = "extSize"
-           case mast = "mast"
-        }
-}

@@ -19,7 +19,6 @@ public class QuiverFetcher: ObservableObject {
     var decoder = JSONDecoder()
     
     func load() {
-
         let quiverInfo = try! decoder.decode(Array<Rigs>.self, from: quiverJson)
         do {
             if quiverInfo.isEmpty {

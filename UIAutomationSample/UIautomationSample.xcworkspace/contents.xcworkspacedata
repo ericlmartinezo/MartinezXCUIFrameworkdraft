@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ericlmartinez/Documents/XCUITestArchitecture/UIAutomationSample/UI automation Sample/Resource/CoreData.swift">
+   </FileRef>
+   <FileRef
+      location = "group:UI automation Sample/Resource/FullRig+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:UIautomationSample.xcodeproj">
    </FileRef>
    <FileRef
