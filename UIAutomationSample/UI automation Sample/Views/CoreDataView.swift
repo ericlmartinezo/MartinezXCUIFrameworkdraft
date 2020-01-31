@@ -15,36 +15,53 @@ struct CoreDataView: View {
     
     @State private var newSail = ""
     @State private var newModelDescription = ""
+    @State private var whatSize = ""
+    @State private var whichBoom = ""
+    @State private var whichExtension = ""
+    @State private var whichMast = ""
     
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("Add Blog Idea")) {
+                Section(header: Text("Rig a Sail")) {
                     VStack {
                         VStack {
                             TextField("Brand", text: self.$newSail)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                             TextField("Model", text: self.$newModelDescription)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                            TextField("Size", text: self.$whatSize)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                            TextField("Boom", text: self.$whichBoom)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                            TextField("Extension", text: self.$whichExtension)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                            TextField("Mast", text: self.$whichMast)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
                         }
                         
                     VStack {
                             Button(action: ({
                                 
-                                
                                 let entry = QuiverData(context: self.managedObjectContext)
                                 entry.brand = self.newSail
                                 entry.model = self.newModelDescription
-                    
+                                entry.size = self.whatSize
+                                entry.boom = self.whichBoom
+                                entry.extensionSize = self.whichExtension
+                                entry.mast = self.whichMast
+
                                     do {
                                         try self.managedObjectContext.save()
                                     } catch {
                                         print(error)
                                     }
-                                
-                                
                                 self.newSail = ""
                                 self.newModelDescription = ""
+                                self.whatSize = ""
+                                self.whichBoom = ""
+                                self.whichExtension = ""
+                                self.whichMast = ""
                             })) {
                                 HStack {
                                     Image(systemName: "plus.circle.fill")
@@ -68,6 +85,14 @@ struct CoreDataView: View {
                                 .font(.headline)
                             Text(quiverSail.model ?? "")
                                 .font(.subheadline)
+                            Text(quiverSail.size ?? "")
+                                .font(.headline)
+                            Text(quiverSail.boom ?? "")
+                                .font(.subheadline)
+                            Text(quiverSail.extensionSize ?? "")
+                                .font(.headline)
+                            Text(quiverSail.mast ?? "")
+                                .font(.subheadline)
                         }
                     }
                 }
@@ -85,7 +110,7 @@ struct CoreDataView: View {
                 .font(.headline)
             }
             .listStyle(GroupedListStyle())
-            .navigationBarTitle(Text("Blog Idea List"))
+            .navigationBarTitle(Text("Your Quiver Bag"))
             .navigationBarItems(trailing: EditButton())
         }
     }

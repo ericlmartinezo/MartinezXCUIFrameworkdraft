@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="QuiverData" representedClassName=".QuiverData" syncable="YES">
+        <attribute name="boom" optional="YES" attributeType="String"/>
         <attribute name="brand" optional="YES" attributeType="String"/>
+        <attribute name="extensionSize" optional="YES" attributeType="String"/>
+        <attribute name="mast" optional="YES" attributeType="String"/>
         <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="QuiverData" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="QuiverData" positionX="-63" positionY="-18" width="128" height="133"/>
     </elements>
 </model>
